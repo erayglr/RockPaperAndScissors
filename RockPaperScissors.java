@@ -5,17 +5,18 @@ import java.util.Scanner;
 
 public class RockPaperScissors {
     public static void main(String[] args) {
-        System.out.println("the winner is wins the game 3 times");
+        System.out.println("**The winner is wins the game 3 times**\n");
         Random random = new Random();
         String[] rps = {"Rock","Paper","Scissors"};
+        System.out.println("What is your choice ?");
         Scanner scanner = new Scanner(System.in);
-        int pcSkor =0;
-        int oyuncuSkor =0;
+        int pcScore =0;
+        int playerScore =0;
         do {
             String input = scanner.next();
             int a = random.nextInt(3);
             if (a == 0 && input.equalsIgnoreCase("rock")) {
-                System.out.println("Computer:" + rps[a]);
+                System.out.println("The Computer's choice:" + rps[a]);
                 System.out.println("""
                             _______
                         ---'   ____)
@@ -23,7 +24,7 @@ public class RockPaperScissors {
                               (_____)
                               (____)
                         ---.__(___)""");
-                System.out.println("Draw! " + "Computer Score is : " + pcSkor + " Player score is : " + oyuncuSkor);
+                System.out.println("Draw! " + "Computer Score is : " + pcScore + " Player score is : " + playerScore);
             } else if (a == 0 && input.equalsIgnoreCase("paper")) {
                 System.out.println("The Computer's choice :" + rps[a]);
                 System.out.println("""
@@ -33,8 +34,8 @@ public class RockPaperScissors {
                               (_____)
                               (____)
                         ---.__(___)""");
-                oyuncuSkor++;
-                System.out.println("Player wins the round! " + "Computer score is : " + pcSkor + " Player score is : " + oyuncuSkor);
+                playerScore++;
+                System.out.println("Player wins the round! " + "Computer score is : " + pcScore + " Player score is : " + playerScore);
             } else if (a == 0 && input.equalsIgnoreCase("scissors")) {
                 System.out.println("The Computer's choice :" + rps[a]);
                 System.out.println("""
@@ -44,11 +45,11 @@ public class RockPaperScissors {
                               (_____)
                               (____)
                         ---.__(___)""");
-                pcSkor++;
-                System.out.println("Computer wins the round! " + "Computer score is : " + pcSkor + " Player score is : " + oyuncuSkor);
+                pcScore++;
+                System.out.println("Computer wins the round! " + "Computer score is : " + pcScore + " Player score is : " + playerScore);
             }
             if (a == 1 && input.equalsIgnoreCase("rock")) {
-                System.out.println("Bilgisayarın tuttuğu :" + rps[a]);
+                System.out.println("The Computer's choice :" + rps[a]);
                 System.out.println("""
                             _______
                         ---'   ____)____
@@ -56,10 +57,10 @@ public class RockPaperScissors {
                                   _______)
                                  _______)
                         ---.__________)""");
-                pcSkor++;
-                System.out.println("Bilgisayar kazandı! " + "Bilgisayar skoru : " + pcSkor + " Oyuncu skoru : " + oyuncuSkor);
+                pcScore++;
+                System.out.println("Computer wins the round! " + "Computer score is : " + pcScore + " Player score is : " + playerScore);
             } else if (a == 1 && input.equalsIgnoreCase("paper")) {
-                System.out.println("Bilgisayarın tuttuğu :" + rps[a]);
+                System.out.println("The Computer's choice :" + rps[a]);
                 System.out.println("""
                             _______
                         ---'   ____)____
@@ -67,9 +68,9 @@ public class RockPaperScissors {
                                   _______)
                                  _______)
                         ---.__________)""");
-                System.out.println("Berabere! " + "Bilgisayar skoru :" + pcSkor + " Oyuncu skoru : " + oyuncuSkor);
+                System.out.println("Draw! " + "Computer score is :" + pcScore + " Player score is : " + playerScore);
             } else if (a == 1 && input.equalsIgnoreCase("scissors")) {
-                System.out.println("Bilgisayarın tuttuğu :" + rps[a]);
+                System.out.println("The Computer's choice :" + rps[a]);
                 System.out.println("""
                             _______
                         ---'   ____)____
@@ -77,11 +78,11 @@ public class RockPaperScissors {
                                   _______)
                                  _______)
                         ---.__________)""");
-                oyuncuSkor++;
-                System.out.println("Oyuncu kazandı! " + "Bilgisayar skoru : " + pcSkor + " Oyuncu skoru : " + oyuncuSkor);
+                playerScore++;
+                System.out.println("Player wins the round! " + "Computer score is : " + pcScore + " Player score is : " + playerScore);
             }
             if (a == 2 && input.equalsIgnoreCase("rock")) {
-                System.out.println("Bilgisayarın tuttuğu :" + rps[a]);
+                System.out.println("The Computer's choice :" + rps[a]);
                 System.out.println("""
                             _______
                         ---'   ____)____
@@ -89,10 +90,10 @@ public class RockPaperScissors {
                                __________)
                               (____)
                         ---.__(___)""");
-                oyuncuSkor++;
-                System.out.println("Oyuncu kazandı! " + "Bilgisayar skoru : " + pcSkor + " Oyuncu skoru : " + oyuncuSkor);
+                playerScore++;
+                System.out.println("Player wins the round! " + "Computer score is : " + pcScore + " Player score is : " + playerScore);
             } else if (a == 2 && input.equalsIgnoreCase("paper")) {
-                System.out.println("Bilgisayarın tuttuğu :" + rps[a]);
+                System.out.println("The Computer's choice :" + rps[a]);
                 System.out.println("""
                             _______
                         ---'   ____)____
@@ -100,10 +101,10 @@ public class RockPaperScissors {
                                __________)
                               (____)
                         ---.__(___)""");
-                pcSkor++;
-                System.out.println("Bilgisayar kazandı! " + "Bilgisayar skoru : " + pcSkor + " Oyuncu skoru : " + oyuncuSkor);
+                pcScore++;
+                System.out.println("Bilgisayar kazandı! " + "Computer score is : " + pcScore + " Player score is : " + playerScore);
             } else if (a == 2 && input.equalsIgnoreCase("scissors")) {
-                System.out.println("Bilgisayarın tuttuğu :" + rps[a]);
+                System.out.println("The Computer's choice :" + rps[a]);
                 System.out.println("""
                             _______
                         ---'   ____)____
@@ -111,13 +112,13 @@ public class RockPaperScissors {
                                __________)
                               (____)
                         ---.__(___)""");
-                System.out.println("Draw! " + "Bilgisayar skoru : " + pcSkor + " Oyuncu skoru : " + oyuncuSkor);
+                System.out.println("Draw! " + "Bilgisayar skoru : " + pcScore + " Player score is : " + playerScore);
             }
-            if (pcSkor == 3) {
-                System.out.println("Kaybettiniz :)");
-            } else if (oyuncuSkor == 3) {
-                System.out.println("Tebrikler kazandınız :)");
+            if (pcScore == 3) {
+                System.out.println("You lost  the game :)");
+            } else if (playerScore == 3) {
+                System.out.println("Congratulations, you have won :)");
             }
-        } while (pcSkor != 3 && oyuncuSkor != 3);
+        } while (pcScore != 3 && playerScore != 3);
     }
 }
