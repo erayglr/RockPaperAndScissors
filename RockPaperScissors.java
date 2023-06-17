@@ -111,7 +111,7 @@ public class RockPaperScissors {
                                __________)
                               (____)
                         ---.__(___)""");
-                System.out.println("Berabere! " + "Bilgisayar skoru : " + pcSkor + " Oyuncu skoru : " + oyuncuSkor);
+                System.out.println("Draw! " + "Bilgisayar skoru : " + pcSkor + " Oyuncu skoru : " + oyuncuSkor);
             }
             if (pcSkor == 3) {
                 System.out.println("Kaybettiniz :)");
